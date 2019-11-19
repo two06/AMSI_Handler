@@ -126,7 +126,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AMSIScanFileController.cs" />
+    <Compile Include="Controllers\AMSIScanLinesController.cs" />
+    <Compile Include="Controllers\AMSIScanBufferController.cs" />
     <Compile Include="Enums\AMSI_RESULT.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

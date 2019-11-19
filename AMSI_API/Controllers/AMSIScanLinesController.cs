@@ -10,7 +10,7 @@ using System.Web.Http;
 
 namespace AMSI_API.Controllers
 {
-    public class AMSIScanFileController : ApiController
+    public class AMSIScanLinesController : ApiController
     {
         public System.Web.Http.Results.JsonResult<List<int>> Post(HttpRequestMessage request)
         {
