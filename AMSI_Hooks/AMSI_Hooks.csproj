@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AntiMalwareScanInterface\AntiMalwareScanInterface.cs" />
-    <Compile Include="Enums\AMSI_RESULT.cs" />
+    <Compile Include="Helpers\ResultHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

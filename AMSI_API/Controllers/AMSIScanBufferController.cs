@@ -1,6 +1,4 @@
-﻿using AMSI_API.Enums;
-using AMSI_API.Helpers;
-using AMSI_Hooks.AntiMalwareScanInterface;
+﻿using AMSI_Hooks.AntiMalwareScanInterface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +11,13 @@ namespace AMSI_API.Controllers
 {
     public class AMSIScanBufferController : ApiController
     {
-        public System.Web.Http.Results.JsonResult<AMSI_RESULT> Post(HttpRequestMessage request)
+        public System.Web.Http.Results.JsonResult<bool> Post(HttpRequestMessage request)
         {
             var sample = request.Content.ReadAsStringAsync().Result;
             var bytes = Encoding.UTF8.GetBytes(sample);
             var scanner = new AntiMalwareScanInterface();
             var result = scanner.CallAntimalwareScanInterface(bytes);
-            return Json(EnumConverters.ConvertFrom(result));
+            return Json(result);
         }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using AMSI_Hooks.AntiMalwareScanInterface;
-using AMSI_Hooks.Enums;
 using Scanners.Utils;
 using System;
 using System.Collections.Generic;
@@ -21,7 +20,7 @@ namespace Scanners
             foreach (string line in new LineReader(() => new StringReader(fileContents)))
             {
                 var result = AMSI_Hooks.CallAntimalwareScanInterface(line);
-                if (result.Equals(AMSI_RESULT.AMSI_RESULT_DETECTED))
+                if (result)
                 {
                     detections.Add(lineNum);
                 }
