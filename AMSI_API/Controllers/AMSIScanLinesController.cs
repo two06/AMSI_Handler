@@ -1,5 +1,4 @@
-﻿using AMSI_API.Helpers;
-using AMSI_Hooks.AntiMalwareScanInterface;
+﻿using AMSI_Hooks.AntiMalwareScanInterface;
 using Scanners;
 using System;
 using System.Collections.Generic;
