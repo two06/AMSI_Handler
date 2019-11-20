@@ -156,10 +156,6 @@
       <Project>{86652418-5605-43fd-98b5-859828b072be}</Project>
       <Name>AMSI_Hooks</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Scanners\Scanners.csproj">
-      <Project>{1d920b03-c537-4659-9a8c-09fb1d615e98}</Project>
-      <Name>Scanners</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

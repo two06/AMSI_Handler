@@ -1,6 +1,5 @@
 ﻿using AMSI_API.Models;
 using AMSI_Hooks.AntiMalwareScanInterface;
-using Scanners;
 using System;
 using System.Collections.Generic;
 using System.Linq;
